@@ -4,6 +4,66 @@
   padding: 24px 16px;
 }
 
+.catalogo h1 {
+  margin: 0 0 16px;
+}
+
+.catalogo__buscador {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 16px;
+  border: 2px solid var(--rosa-claro);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--texto);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.catalogo__buscador:focus {
+  outline: none;
+  border-color: var(--rosa);
+}
+
+.catalogo__filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.catalogo__filtro {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 999px;
+  background: var(--rosa-claro);
+  color: var(--texto);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.catalogo__filtro:hover {
+  background: var(--durazno);
+}
+
+.catalogo__filtro--activo,
+.catalogo__filtro--activo:hover {
+  background: var(--rosa);
+  color: #fff;
+}
+
+.catalogo__cantidad {
+  margin: 0 0 16px;
+  font-size: 13px;
+}
+
+.catalogo__vacio {
+  padding: 32px 0;
+  text-align: center;
+}
+
 .catalogo__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
