@@ -1,0 +1,164 @@
+.home {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px 24px;
+}
+
+/* ---------- Botones ---------- */
+.boton {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.boton--oscuro {
+  background: var(--texto);
+  color: #fff;
+}
+
+.boton--rosa {
+  background: var(--rosa);
+  color: #fff;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.hero__texto {
+  background: var(--rosa-claro);
+  border-radius: 24px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 300px;
+}
+
+.hero__texto h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.hero__texto p {
+  margin: 0 0 12px;
+  font-size: 13px;
+}
+
+.hero__imagen {
+  position: relative;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #f7b6cf, #fdd5b8);
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+
+.hero__etiqueta {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  background: #fde9a8;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ---------- Categorías ---------- */
+.categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 28px 0;
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.categoria__circulo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.categoria__nombre {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ---------- Favoritos ---------- */
+.favoritos h2 {
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+
+.favoritos__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ---------- Banner ---------- */
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fde9a8;
+}
+
+.banner__texto {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.banner__texto h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.banner__imagen {
+  background: linear-gradient(135deg, #f4c6dc, #fdd5b8);
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+
+/* ---------- Celulares ---------- */
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .favoritos__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner {
+    grid-template-columns: 1fr;
+  }
+}
