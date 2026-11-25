@@ -1,0 +1,59 @@
+.footer {
+  margin-top: 48px;
+  background: var(--rosa-claro);
+}
+
+.footer__contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer__logo {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--rosa);
+  text-decoration: none;
+}
+
+.footer__info {
+  margin: 0;
+  font-size: 13px;
+}
+
+.footer__redes {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__icono {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer__icono--rosa {
+  background: #fff;
+  color: var(--rosa);
+}
+
+.footer__icono--verde {
+  background: #fff;
+  color: #2e9e5b;
+}
+
+@media (max-width: 700px) {
+  .footer__contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}
