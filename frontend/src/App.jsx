@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
-import Home from "./pages/Home";
-import Catalogo from "./pages/Catalogo";
-import DetalleProducto from "./pages/DetalleProducto";
-import Carrito from "./pages/Carrito";
-import Checkout from "./pages/Checkout";
-import Confirmacion from "./pages/Confirmacion";
-import Retiro from "./pages/Retiro";
-import Login from "./pages/Login";
-import Registro from "./pages/Registro";
-import RecuperarPassword from "./pages/RecuperarPassword";
-import Perfil from "./pages/Perfil";
-import MisPedidos from "./pages/MisPedidos";
+import Home from "./pages/Home/Home";
+import Catalogo from "./pages/Catalogo/Catalogo";
+import DetalleProducto from "./pages/Catalogo/DetalleProducto";
+import Carrito from "./pages/Pedido/Carrito";
+import Checkout from "./pages/Pedido/Checkout";
+import Confirmacion from "./pages/Pedido/Confirmacion";
+import Retiro from "./pages/Pedido/Retiro";
+import Login from "./pages/Auth/Login";
+import Registro from "./pages/Auth/Registro";
+import RecuperarPassword from "./pages/Auth/RecuperarPassword";
+import Perfil from "./pages/Cuenta/Perfil";
+import MisPedidos from "./pages/Cuenta/MisPedidos";
 
 export default function App() {
   return (
