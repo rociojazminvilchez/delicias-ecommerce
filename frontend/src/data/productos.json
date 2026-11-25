@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "nombre": "Torta Rosé de Fresas",
+  "categoria": "tortas",
+  "precio": 26000,
+  "descripcion": "Bizcocho de vainilla, crema chantilly y fresas frescas.",
+  "imagen": "/img/torta-rose.jpg",
+  "ingredientes": ["harina", "huevos", "fresas"],
+  "alergenos": ["gluten", "lácteos", "huevo"],
+  "inclusivo": [],
+  "anticipacionHoras": 48,
+  "variantes": ["8 porciones", "12 porciones", "20 porciones"],
+  "destacado": true
+}
