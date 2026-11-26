@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { useCarrito } from "../../context/CarritoContext";
 
 const categorias = [
   { nombre: "Pastelería", valor: "pasteleria" },
@@ -9,7 +10,8 @@ const categorias = [
 ];
 
 export default function Navbar() {
-  // Por ahora fijo en 0. Más adelante lo conectamos al carrito real.
+//  const { carrito } = useCarrito();
+//  console.log(carrito);
   const cantidadCarrito = 0;
 
   return (
